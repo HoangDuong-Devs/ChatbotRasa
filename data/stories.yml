@@ -1,0 +1,205 @@
+version: "3.1"
+
+stories:
+
+- story: path1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_select_option1
+  - intent: experience
+  - action: utter_select_option2
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: path2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_select_option1
+  - intent: experience_opt1
+  - action: utter_experience_opt1
+  - intent: experience_opt2
+  - action: utter_experience_opt2
+  - intent: thanks
+  - action: utter_thanks
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: nlu_fallback
+  - action: utter_default
+
+- story: path3
+  steps:
+  - intent: care
+  - action: utter_select_option1
+  - intent: thanks
+  - action: utter_thanks
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path4
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: care
+  - action: utter_select_option1
+  - intent: thanks
+  - action: utter_thanks
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_select_option1
+  - intent: experience
+  - action: utter_select_option2
+  - intent: nlu_fallback
+  - action: utter_default
+  - intent: thanks
+  - action: utter_thanks
+  - intent: care
+  - action: utter_select_option1
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path6
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: greet
+  - action: utter_greet
+  - action: utter_select_option1
+  - intent: care
+  - action: utter_select_option1
+  - intent: thanks
+  - action: utter_thanks
+  - intent: experience
+  - action: utter_select_option2
+  - intent: thanks
+  - action: utter_thanks
+  - intent: nlu_fallback
+  - action: utter_default
+  - intent: apply
+  - action: utter_apply
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_select_option1
+  - intent: thanks
+  - action: utter_thanks
+  - intent: experience
+  - intent: apply
+  - action: utter_apply
+  - action: utter_select_option2
+  - intent: thanks
+  - action: utter_thanks
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_select_option1
+  - intent: thanks
+  - action: utter_thanks
+  - intent: thanks
+  - action: utter_thanks
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path8
+  steps:
+  - intent: experience
+  - action: utter_select_option2
+  - intent: thanks
+  - action: utter_thanks
+  - intent: nlu_fallback
+  - action: utter_default
+  - intent: care
+  - action: utter_select_option1
+  - intent: thanks
+
+- story: path9
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+  - intent: greet
+  - action: utter_greet
+  - action: utter_select_option1
+  - intent: aboutus
+  - action: utter_aboutus
+  - intent: experience
+  - action: utter_select_option2
+  - intent: thanks
+  - action: utter_thanks
+  - intent: care
+  - action: utter_select_option1
+  - intent: thanks
+
+- story: path10
+  steps:
+    - intent: aboutus
+    - action: utter_aboutus
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: path11
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_select_option1
+    - intent: bot_challenge
+    - action: utter_iamabot
+    - intent: aboutus
+    - action: utter_aboutus
+    - intent: thanks
+    - action: utter_thanks
+    - intent: care
+    - action: utter_select_option1
+    - intent: thanks
+    - action: utter_thanks
+    - intent: experience
+    - action: utter_select_option2
+    - intent: experience
+    - action: utter_select_option2
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: path12
+  steps:
+  - intent: aboutus
+  - action: utter_aboutus
+  - intent: apply
+  - action: utter_apply
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path13
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_select_option1
+  - intent: nlu_fallback
+  - action: utter_default
+  - intent: aboutus
+  - action: utter_aboutus
+  - intent: thanks
+  - action: utter_thanks
+  - intent: apply
+  - action: utter_apply
+  - intent: goodbye
+  - action: utter_goodbye
+
+

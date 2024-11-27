@@ -1,0 +1,166 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - xin chào
+    - chào buổi sáng
+    - chào
+    - xin chao
+    - bạn có ở đó không?
+    - chào đằng ấy
+    - chào anh
+    - chào chị
+    - chào bạn
+    - chao
+    - chào buổi chiều
+    - chao buoi sang
+    - bắt đầu
+    - bat dau
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt
+    - tam biet
+    - hen gap lai
+    - hẹn gặp lại
+    - tạm biệt bạn
+    - tam biet ban
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - bạn là bot à
+    - bạn là máy ?
+    - ban la nguoi may a
+    - ban la người à?
+    - ai vậy?
+    
+
+- intent: thanks
+  examples: |
+    - cảm ơn bạn
+    - thank you
+    - tku
+    - tks
+    - cảm ơn bạn nhé
+    - cảm ơn nhiều
+    - cảm ơn
+    - cám ơn
+    - thanks
+    - thank u
+    - cam on
+    - cam on ban
+
+- intent: option_one
+  examples: |
+    - I choose option one
+    - option one
+    - tôi chọn lựa chọn một
+    - lựa chọn một
+    - lựa chọn 1
+    - lua chon mot
+    - tôi quan tâm tới sản phầm EKYC
+    - toi quan tam toi san pham EKYC
+    - ekyc
+    - thong tin san pham EKYC
+    - san pham EKYC
+    - thong tin EKYC
+
+- intent: option_two
+  examples: |
+    - I choose option two
+    - option two
+    - toi quan tam toi san pham faceid
+    - Tôi quan tâm tới sản phầm FaceID
+    - faceid?
+    - faceid
+    - san pham faceid
+    - sản phẩm faceid
+    - face id
+    
+
+- intent: option_three
+  examples: |
+    - I choose option three
+    - option three
+    - Tôi quan tâm tới sản phầm giám sát hành vi
+    - toi quan tam toi san pham giam sat hanh vi
+    - giam sat hanh vi
+
+- intent: experience
+  examples: |
+    - Tôi muốn trải nghiệm sản phẩm
+    - trải nghiệm sản phẩm
+    - trải nghiệm
+    - trai nghiem san pham
+    - minh muon trai nghiem san pham
+    - trai nghiem
+
+- intent: apply
+  examples: |
+    - Mình muốn xem thông tin tuyển dụng
+    - thông tin tuyển dụng
+    - thong tin tuyen dung
+    - Tôi muốn xem thông tin tuyển dụng
+    - minh muon xem thong tin tuyen dung
+    - toi muon xem thong tin tuyen dung
+    - tuyen dung
+
+- intent: experience_opt1
+  examples: |
+    - trai nghiem ekyc
+    - trải nghiệm EKYC
+    - tôi muốn trải nghiệm EKYC
+    - Tôi muốn trải nghiệm sản phẩm EKYC
+
+- intent: experience_opt2
+  examples: |
+    - trai nghiem giam sat hanh vi
+    - trải nghiệm giám sát hành vi
+    - Tôi muốn trải nghiệm sản phẩm giám sát hành vi
+    - Toi muon trai nghiem san pham giam sat hanh vi
+
+- intent: care
+  examples: |
+    - toi muon biet thong tin ve cac san pham
+    - tôi muốn biết thông tin sản phẩm
+    - cho tôi thông tin về các sản phẩm
+    - toi muon thong tin ve cac san pham
+    - thong tin ve san pham
+    - thông tin về sản phẩm
+
+- intent: aboutus
+  examples: |
+    - dxtech la gi?
+    - dxtech la cong ty gi
+    - dxtech?
+    - dxtech là gì?
+    - what is dxtech?
+    - dxtech là công ty gì?

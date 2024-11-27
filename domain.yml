@@ -1,0 +1,109 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - deny
+  - bot_challenge
+  - thanks
+  - facebook
+  - option_one
+  - option_two
+  - option_three
+  - apply
+  - experience
+  - experience_opt1
+  - experience_opt2
+  - care
+  - aboutus
+
+responses:
+  utter_greet:
+  - text: "DXTECH xin chào! Mình là DXbot, mình sẽ hỗ trợ bạn tìm hiểu nhanh sản phẩm của chúng mình!"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Tạm biệt, nếu có bất cứ thắc mắc gì, đừng ngần ngại hỏi nhé!"
+
+  utter_iamabot:
+  - text: "Tôi là chatbot, được tạo bởi DXTech"
+
+  utter_default:
+  - text: "Xin lỗi tôi không hiểu"
+
+  utter_thanks:
+  - text: "Không có gì. Nếu bạn còn câu hỏi gì đừng ngần ngại đặt câu hỏi!"
+
+  utter_facebook:
+  - text: "https://www.facebook.com/?locale=vi_VN"
+
+  utter_select_option1:
+  - text: "Bạn đang quan tâm đến sản phẩm nào của DXTech: "
+    buttons:
+      - title: "EKYC"
+        payload: "/option_one"
+      - title: "FaceID"
+        payload: "/option_two"
+      - title: "Giám sát hành vi"
+        payload: "/option_three"
+
+  utter_option_one:
+  - text: "link: EKYC"
+
+  utter_option_two:
+  - text: "link: FaceID"
+
+  utter_option_three:
+  - text: "link: Giám sát hành vi"
+
+  utter_experience_opt1:
+  - text: "Trải nghiệm EKYC"
+
+  utter_experience_opt2:
+  - text: "Trải nghiệm giám sát hành vi"
+
+  utter_select_option2:
+    - text: "Bạn muốn trải nghiệm sản phẩm nào: "
+      buttons:
+        - title: "EKYC"
+          payload: "/experience_opt1"
+        - title: "Giám sát hành vi"
+          payload: "/experience_opt2"
+
+  utter_aboutus:
+    - text: "DXTech là một công ty phần mềm có trụ sở chính tại Việt Nam."
+
+  utter_apply:
+    - text: "Link: tuyển dụng"
+
+actions:
+- utter_greet
+- action_custom_fallback
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_default
+- utter_unclear
+- utter_thanks
+- utter_facebook
+- utter_select_option1
+- utter_select_option2
+- utter_option_one
+- utter_option_two
+- utter_option_three
+- utter_experience_opt1
+- utter_experience_opt2
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

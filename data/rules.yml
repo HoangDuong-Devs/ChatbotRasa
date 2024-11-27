@@ -1,0 +1,48 @@
+version: "3.1"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: say facebook link
+    steps:
+      - intent: facebook
+      - action: utter_facebook
+
+  - rule: select ekyc
+    steps:
+      - intent: option_one
+      - action: utter_option_one
+
+  - rule: select faceid
+    steps:
+      - intent: option_two
+      - action: utter_option_two
+
+  - rule: select giam sat san pham
+    steps:
+      - intent: option_three
+      - action: utter_option_three
+
+  - rule: select trai nghiem san pham 1
+    steps:
+      - intent: experience_opt1
+      - action: utter_experience_opt1
+
+  - rule: select trai nghiem san pham 2
+    steps:
+      - intent: experience_opt2
+      - action: utter_experience_opt2
+
+  - rule: fallback
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
